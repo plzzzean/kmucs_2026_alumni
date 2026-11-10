@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>슬랑제 : 울림 — 초대장</title>
+  <meta name="description" content="2026년 11월 21일(토) 15:00, 국민대학교 체육관. 국민대학교 소프트웨어융합대학 슬랑제 : 울림에 초대합니다." />
+  <meta name="theme-color" content="#1C3987" />
+
+  <!-- 카카오톡·SNS 공유 미리보기: 배포 후 og:url / og:image 를 절대경로로 바꿔주세요 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="슬랑제 : 울림 — 초대장" />
+  <meta property="og:description" content="2026.11.21 SAT 15:00 · 국민대학교 체육관" />
+  <meta property="og:image" content="https://USERNAME.github.io/REPO/img/poster.jpg" />
+  <meta property="og:url" content="https://USERNAME.github.io/REPO/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+
+    <!-- ① HERO : 포스터 구성(가로 1414 기준 좌표)을 세로로 압축한 SVG -->
+    <section class="hero" aria-label="슬랑제 : 울림 — 2026년 11월 21일 토요일 15:00 국민대학교 체육관">
+      <svg class="hero__art" viewBox="0 -70 1414 1900" aria-hidden="true">
+        <defs>
+          <linearGradient id="fadeGrad" x1="0.15" y1="0.05" x2="0.85" y2="0.95">
+            <stop offset="0" stop-color="#fff" />
+            <stop offset="0.45" stop-color="#fff" stop-opacity="0.9" />
+            <stop offset="1" stop-color="#fff" stop-opacity="0.35" />
+          </linearGradient>
+          <mask id="fadeMask" maskContentUnits="objectBoundingBox">
+            <rect width="1" height="1" fill="url(#fadeGrad)" />
+          </mask>
+          <path id="arcTop" d="M716,108 A437,437 0 1,1 716,982 A437,437 0 1,1 716,108" />
+          <path id="arcBottom" d="M716,741 A439,439 0 1,1 716,1619 A439,439 0 1,1 716,741" />
+        </defs>
+
+        <!-- 세로 행사 정보 -->
+        <g class="meta">
+          <text transform="translate(1326 10) rotate(90)" textLength="845" lengthAdjust="spacing">국민대학교 소프트웨어융합대학 및 제10대 소프트웨어융합대학 학생회 ECHO</text>
+          <text transform="translate(1286 10) rotate(90)" textLength="445" lengthAdjust="spacing">2026년 11월 21일 토요일 15:00 ~ 19:00</text>
+          <text transform="translate(1246 10) rotate(90)" textLength="200" lengthAdjust="spacing">국민대학교 체육관</text>
+        </g>
+
+        <!-- 8자 원 -->
+        <g class="ring ring--top">
+          <image href="img/rings-white.png" x="290.5" y="119.5" width="851" height="851" mask="url(#fadeMask)" />
+        </g>
+        <g class="ring ring--bottom">
+          <image href="img/rings-white.png" x="290.5" y="754.5" width="851" height="851" />
+          <image href="img/rings-cyan.png" x="290.5" y="754.5" width="851" height="851" />
+        </g>
+        <g class="ripples">
+          <circle cx="716" cy="1180" r="31" />
+          <circle cx="716" cy="1180" r="31" />
+          <circle cx="716" cy="1180" r="31" />
+        </g>
+
+        <!-- 원형 문구 -->
+        <text class="arc arc--top"><textPath href="#arcTop" startOffset="125">선명한 목소리, 끝없는 울림</textPath></text>
+        <text class="arc arc--bottom"><textPath href="#arcBottom" startOffset="2010">올해를 맺는 마침표에서, 내년을 여는 첫 번째 울림으로</textPath></text>
+
+        <!-- 제목 -->
+        <text class="title" transform="translate(66 1060) rotate(90)" textLength="615" lengthAdjust="spacing">슬랑제 : 울림</text>
+      </svg>
+    </section>
+
+    <!-- ② 초대 글 -->
+    <section id="invite" class="section invite reveal">
+      <p class="eyebrow">INVITATION</p>
+      <h2 class="h2">첫 번째 울림에<br />당신을 초대합니다</h2>
+      <p class="body">
+        한 해 동안 우리가 낸 목소리는<br />
+        작은 파동이 되어 서로에게 닿았습니다.<br /><br />
+        올해를 맺는 마침표의 자리에서<br />
+        지난 시간을 함께 돌아보고,<br />
+        다가올 10년의 울림을 함께 그려보려 합니다.<br /><br />
+        선배님과 동문, 재학생 모두가<br />
+        한자리에 모이는 밤에 귀한 걸음 부탁드립니다.
+      </p>
+      <p class="sign">제10대 소프트웨어융합대학 학생회 <b>ECHO</b> 드림</p>
+    </section>
+
+    <!-- ③ 일시 · 캘린더 -->
+    <section class="section when reveal">
+      <p class="eyebrow">DATE &amp; TIME</p>
+      <p class="date-big">2026. 11. 21 <small>SAT</small></p>
+      <p class="body-sm">토요일 오후 3시 ~ 7시</p>
+
+      <div class="calendar" aria-label="2026년 11월 달력">
+        <div class="calendar__head">NOVEMBER 2026</div>
+        <div class="calendar__grid" id="calendar"></div>
+      </div>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><b data-k="d">0</b><span>DAYS</span></div>
+        <div><b data-k="h">0</b><span>HOUR</span></div>
+        <div><b data-k="m">0</b><span>MIN</span></div>
+        <div><b data-k="s">0</b><span>SEC</span></div>
+      </div>
+      <p class="body-sm countdown__msg" id="countdownMsg"></p>
+
+      <button class="btn btn--ghost" id="addCal" type="button">캘린더에 추가하기</button>
+    </section>
+
+    <!-- ④ 프로그램 -->
+    <section class="section program reveal">
+      <p class="eyebrow">PROGRAM</p>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__part">1부</span>
+          <h3>KMUCS RE:CAP</h3>
+          <p>프로젝트 성과 공유 · 학생회 결산</p>
+        </li>
+        <li>
+          <span class="timeline__part">2부</span>
+          <h3>RE:IMAGINE 2036</h3>
+          <p>함께 그리는 10년 뒤의 미래</p>
+        </li>
+        <li>
+          <span class="timeline__part">3부</span>
+          <h3>KMUCS NIGHT</h3>
+          <p>자유 교류 · 뷔페 식사 · 럭키드로우</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ⑤ 오시는 길 -->
+    <section class="section location reveal">
+      <p class="eyebrow">LOCATION</p>
+      <h2 class="h2">국민대학교 체육관</h2>
+      <p class="body-sm">서울특별시 성북구 정릉로 77</p>
+
+      <div class="map-btns">
+        <a class="btn" href="https://map.naver.com/p/search/%EA%B5%AD%EB%AF%BC%EB%8C%80%ED%95%99%EA%B5%90%20%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank" rel="noopener">네이버 지도</a>
+        <a class="btn" href="https://map.kakao.com/?q=%EA%B5%AD%EB%AF%BC%EB%8C%80%ED%95%99%EA%B5%90%20%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank" rel="noopener">카카오맵</a>
+      </div>
+      <button class="copy-addr" type="button" data-copy="서울특별시 성북구 정릉로 77 국민대학교 체육관">주소 복사</button>
+
+      <dl class="transit">
+        <div><dt>지하철</dt><dd>4호선 길음역 3번 출구 → 버스 환승<br />6호선 고려대역 → 버스 환승</dd></div>
+        <div><dt>버스</dt><dd>국민대학교 앞 하차 (간선 143·153 / 지선 1164·1213 등)</dd></div>
+        <div><dt>주차</dt><dd>교내 주차장 이용 가능 (유료)</dd></div>
+      </dl>
+    </section>
+
+    <!-- ⑥ 참석 여부 -->
+    <section class="section rsvp reveal">
+      <p class="eyebrow">RSVP</p>
+      <h2 class="h2">참석 여부를 알려주세요</h2>
+      <p class="body-sm">원활한 행사 준비(식사·좌석)를 위해<br />11월 14일(토)까지 회신 부탁드립니다.</p>
+      <!-- 구글폼 등 링크로 교체 -->
+      <a class="btn btn--solid" href="#" target="_blank" rel="noopener">참석 응답하기</a>
+    </section>
+
+    <!-- ⑦ 공유 / 푸터 -->
+    <footer class="footer reveal">
+      <div class="footer__mark" aria-hidden="true">
+        <img src="img/rings-white.png" alt="" />
+      </div>
+      <button class="btn btn--ghost" id="share" type="button">초대장 공유하기</button>
+      <p class="footer__host">
+        주최 · 국민대학교 소프트웨어융합대학<br />
+        주관 · 제10대 소프트웨어융합대학 학생회 ECHO
+      </p>
+      <p class="footer__contact">문의 · <a href="#">@kmu_sw_echo</a></p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
