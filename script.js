@@ -53,29 +53,6 @@
   tick();
   setInterval(tick, 1000);
 
-  /* add to calendar (.ics) */
-  document.getElementById("addCal").addEventListener("click", () => {
-    const fmt = (d) => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
-    const ics = [
-      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//KMUCS ECHO//Invitation//KO",
-      "BEGIN:VEVENT",
-      "UID:kmucs-2026-ullim@echo",
-      `DTSTAMP:${fmt(new Date())}`,
-      `DTSTART:${fmt(EVENT_START)}`,
-      `DTEND:${fmt(EVENT_END)}`,
-      "SUMMARY:슬랑제 : 울림",
-      "LOCATION:국민대학교 체육관 (서울특별시 성북구 정릉로 77)",
-      "DESCRIPTION:국민대학교 소프트웨어융합대학 슬랑제 : 울림",
-      "END:VEVENT", "END:VCALENDAR",
-    ].join("\r\n");
-    const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
-    const a = Object.assign(document.createElement("a"), { href: url, download: "ullim-2026.ics" });
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  });
-
   /* copy */
   const copy = async (text, done) => {
     try {
