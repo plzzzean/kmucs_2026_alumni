@@ -117,7 +117,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .transit div { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--blue-line); }
 .transit dt { font-size: 13px; color: var(--cyan); font-weight: 400; }
 .transit dd { font-size: 14px; color: var(--white-dim); line-height: 1.7; }
-.transit .note { font-weight: 500; color: var(--white); }
+.transit .note { font-size: 12px; color: var(--white-faint); }
 
 /* buttons */
 .btn {
