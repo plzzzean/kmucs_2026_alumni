@@ -26,7 +26,7 @@ function doPost(e) {
 
     if (!name) return json({ ok: false, error: "name" });
     if (!/^01\d-\d{3,4}-\d{4}$/.test(phone)) return json({ ok: false, error: "phone" });
-    if (!/^\d{7,10}$/.test(studentId)) return json({ ok: false, error: "studentId" });
+    if (!/^\d{2}$/.test(studentId)) return json({ ok: false, error: "studentId" });
 
     lock.waitLock(10000);
     const sheet = getSheet_();

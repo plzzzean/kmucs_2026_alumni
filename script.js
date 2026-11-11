@@ -148,7 +148,7 @@
     };
     if (!name) return fail(form.name, "이름을 입력해 주세요.");
     if (!/^01\d-\d{3,4}-\d{4}$/.test(phone)) return fail(form.phone, "전화번호를 정확히 입력해 주세요.");
-    if (!/^\d{7,10}$/.test(studentId)) return fail(form.studentId, "학번을 숫자로 입력해 주세요.");
+    if (!/^\d{2}$/.test(studentId)) return fail(form.studentId, "학번을 두 자리로 입력해 주세요. (예: 25)");
     if (!form.agree.checked) return fail(null, "개인정보 수집에 동의해 주세요.");
     if (form.website.value) return closeModal(); // 봇
 
