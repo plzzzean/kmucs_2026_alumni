@@ -151,6 +151,46 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* parking modal */
+.modal {
+  width: min(calc(100% - 32px), 420px);
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--blue-line);
+  border-radius: 14px;
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .45);
+}
+.modal::backdrop { background: rgba(8, 16, 44, .7); backdrop-filter: blur(3px); }
+.modal[open] { animation: rise .35s cubic-bezier(.2,.7,.2,1); }
+.modal__form { position: relative; padding: 40px 24px 28px; text-align: left; }
+.modal__form .eyebrow, .modal__form .h2 { text-align: center; }
+.modal__form .h2 { margin-bottom: 8px; }
+.modal__desc { text-align: center; margin-bottom: 26px; }
+.modal__close { position: absolute; top: 10px; right: 12px; width: 40px; height: 40px; font-size: 26px; line-height: 1; color: var(--white-dim); }
+.field { display: block; margin-bottom: 16px; }
+.field span { display: block; font-size: 13px; color: var(--cyan); margin-bottom: 6px; }
+.field input {
+  width: 100%; height: 48px; padding: 0 14px;
+  font: inherit; font-size: 16px; color: var(--white);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+.field input::placeholder { color: var(--white-faint); }
+.field input:focus { border-color: var(--cyan); background: rgba(255,255,255,.1); }
+.field input.invalid { border-color: #ff9eb0; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.agree { display: flex; gap: 10px; align-items: flex-start; margin-top: 4px; font-size: 12px; line-height: 1.6; color: var(--white-dim); cursor: pointer; }
+.agree input { flex: none; width: 18px; height: 18px; margin-top: 1px; accent-color: var(--cyan); }
+.modal__error { min-height: 20px; margin-top: 12px; font-size: 13px; color: #ff9eb0; text-align: center; }
+.modal__submit { display: flex; width: 100%; margin-top: 8px; }
+.modal__submit:disabled { opacity: .6; cursor: default; }
+
 /* reveal */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1); }
 .reveal.in { opacity: 1; transform: none; }
